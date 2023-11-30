@@ -1,4 +1,4 @@
 streamlit
 pandas
 matplotlib==3.4.3  # Replace with the version you need
-seaborn
+seaborn==0.12.2
