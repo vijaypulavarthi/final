@@ -45,7 +45,7 @@ for col in df.columns:
         st.write(f"{col}: {round(df[col].isna().sum() / len(df), 3) * 100}%")
 
  # Title and description
-st.title('Top 10 Percentages of Unsolved Cases')
+st.title('Top 10 Percentages  of Unsolved Cases')
 st.write('This section displays the top 10 percentages of unsolved cases from the FBI dataset.')
 
 # Load data
