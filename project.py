@@ -29,8 +29,7 @@ st.subheader('Categorical Columns')
 st.write(df.describe(include=['O']))
 
 # Display dataset information
-st.subheader('Dataset Information')
-st.write(df.info())
+
 
 # Display percentage of total occurrences for each value in each column
 st.subheader('Percentage of Total Occurrences for Each Value')
