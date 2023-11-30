@@ -39,7 +39,7 @@ for col in df.columns:
     st.write(pd.DataFrame(round(df[col].value_counts(normalize=True) * 100, 2)))
 
 # Display percentage of total null values for each column
-st.subheader('Percentage  of Null  Values')
+st.subheader('Percentage of Null  Values')
 for col in df.columns:
     if df[col].isna().sum():
         st.write(f"{col}: {round(df[col].isna().sum() / len(df), 3) * 100}%")
