@@ -1,10 +1,7 @@
 import streamlit as st
-
-st.title("HI")
-
-import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+
 
 # Load the dataset (replace 'FBI_dataset.csv' with your actual dataset file)
 data = pd.read_csv('FBI_dataset.csv', usecols=['DATA_YEAR', 'OFFENSE_SUBCAT_NAME'])
