@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 from IPython.display import display, HTML
 
 # Load the dataset
-@st.cache  # Cache data for better performance
+@st.cache_data()  # Cache data for better performance
 def load_data():
     return pd.read_csv('FBI_dataset.csv')
+
 
 # Title and description
 st.title('Analysis of FBI Dataset')
@@ -115,6 +116,7 @@ st.pyplot()
 st.subheader('Number of Solved Cases Each Year')
 sns.lineplot(x="DATA_YEAR", y="CLEARED_COUNT", data=df)
 st.pyplot()
+
 
 
 # Plot reported cases by region
